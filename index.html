@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndXD - Ethical Web Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://ik.imagekit.io/rizriz/indxd-logo-2025.png?updatedAt=1764646356408" alt="IndXD Logo">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="themeToggleCheckbox">
+                        <input type="checkbox" id="themeToggleCheckbox">
+                        <span class="slider round">
+                            <i class="fas fa-sun theme-icon sun-icon"></i>
+                            <i class="fas fa-moon theme-icon moon-icon"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#criteria">Our Criteria</a></li>
+                <li><a href="#pillars">9 Pillars</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://form.typeform.com/to/ect4ok0q" class="submit-site-btn" target="_blank">Submit a Site</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="network-background">
+            <canvas id="networkCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="https://ik.imagekit.io/rizriz/indxd-logo-2025.png?updatedAt=1764646356408" alt="IndXD Logo">
+            </div>
+            <p class="tagline">The Ethical Web Directory</p>
+            <p class="subtagline">A human-curated alternative to algorithm-driven search</p>
+            
+            <div class="search-container">
+                <form class="search-box" id="searchForm">
+                    <input type="text" class="search-input" placeholder="Search across 9 pillars of verified, ethical websites..." autofocus>
+                    <button type="submit" class="search-button">Browse Directory</button>
+                </form>
+                <div class="quick-links">
+                    <a href="#" class="quick-link" data-category="Privacy-First Tech">Privacy Tools</a>
+                    <a href="#" class="quick-link" data-category="Verified News">Trusted News</a>
+                    <a href="#" class="quick-link" data-category="Sustainable Brands">Sustainable Brands</a>
+                    <a href="#" class="quick-link" data-category="Verified Connect">Direct Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <!-- Trending Ranks Section -->
+        <section class="trending-ranks-section" id="trending">
+            <h2>Trending Ranks</h2>
+            <p style="margin-bottom: 30px; color: #5f6368; max-width: 800px; margin-left: auto; margin-right: auto;">Top performing sites across our ethical pillars based on community engagement.</p>
+            
+            <div class="trending-grid">
+                <div class="trending-list" style="border-top-color: #4CAF50;">
+                    <h3 style="color: #4CAF50;"><i class="fas fa-leaf"></i> Sustainable Brands</h3>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-1">1</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Patagonia</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 42 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-2">2</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Allbirds</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 38 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-3">3</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Tentree</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 29 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-view-all">
+                        <a href="#" class="trending-view-all-btn" data-category="Sustainable Brands">View All Sustainable</a>
+                    </div>
+                </div>
+                
+                <div class="trending-list" style="border-top-color: #2196F3;">
+                    <h3 style="color: #2196F3;"><i class="fas fa-shield-alt"></i> Privacy Tech</h3>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-1">1</div>
+                        <div class="trending-content">
+                            <div class="trending-name">DuckDuckGo</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 156 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-2">2</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Signal</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 87 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-3">3</div>
+                        <div class="trending-content">
+                            <div class="trending-name">ProtonMail</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 72 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-view-all">
+                        <a href="#" class="trending-view-all-btn" data-category="Privacy-First Tech">View All Privacy</a>
+                    </div>
+                </div>
+                
+                <div class="trending-list" style="border-top-color: #F44336;">
+                    <h3 style="color: #F44336;"><i class="fas fa-newspaper"></i> Verified News</h3>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-1">1</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Newscord</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 256 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-2">2</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Aljazeera</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 198 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-3">3</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Middle East Eye</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 142 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-view-all">
+                        <a href="#" class="trending-view-all-btn" data-category="Verified News">View All News</a>
+                    </div>
+                </div>
+                
+                <div class="trending-list" style="border-top-color: #9C27B0;">
+                    <h3 style="color: #9C27B0;"><i class="fas fa-graduation-cap"></i> Knowledge Hubs</h3>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-1">1</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Khan Academy</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 421 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-2">2</div>
+                        <div class="trending-content">
+                            <div class="trending-name">Coursera</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 203 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-rank rank-3">3</div>
+                        <div class="trending-content">
+                            <div class="trending-name">edX</div>
+                            <div class="trending-clicks"><i class="fas fa-chart-line"></i> 189 clicks</div>
+                        </div>
+                    </div>
+                    <div class="trending-view-all">
+                        <a href="#" class="trending-view-all-btn" data-category="Knowledge Hubs">View All Knowledge</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Introduction Section -->
+        <section class="introduction-section" id="introduction">
+            <h2>Introduction</h2>
+            <div class="info-buttons">
+                <div class="info-button" id="howToUseBtn">
+                    <div class="info-icon">📚</div>
+                    <h3>How to Use This Directory</h3>
+                    <p>Think of us as your starting point for better web research. We've done the vetting so you don't have to.</p>
+                    <button class="read-more-btn" data-modal="howToUseModal">Read More</button>
+                </div>
+                
+                <div class="info-button" id="rankingSystemBtn">
+                    <div class="info-icon">⚖️</div>
+                    <h3>Our Fair Ranking System</h3>
+                    <p>Unlike traditional search engines, we believe in fair competition within ethical categories.</p>
+                    <button class="read-more-btn" data-modal="rankingSystemModal">Read More</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ethical Criteria Section (pillar-style cards) -->
+        <section class="criteria-section section-centered" id="criteria">
+            <h2>Our Ethical Criteria</h2>
+            <div class="criteria-content">
+                <p>We manually curate all websites in our directory. Unlike algorithm-driven search engines that automatically crawl and index content, we <strong>do not use auto-crawling</strong>. Every site is reviewed against strict ethical standards to ensure we never promote unethical content.</p>
+                
+                <h3>We Exclude Sites That:</h3>
+                
+                <div class="criteria-grid">
+                    <div class="criteria-card">
+                        <div class="criteria-icon">💥</div>
+                        <div class="criteria-text">Promote or glorify violence, hatred, or terrorism</div>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🔞</div>
+                        <div class="criteria-text">Contain pornography or sexually explicit material</div>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">💊</div>
+                        <div class="criteria-text">Encourage drug usage or substance abuse</div>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🚸</div>
+                        <div class="criteria-text">Are involved in child trafficking or exploitation</div>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🏛️</div>
+                        <div class="criteria-text">Support neo-colonization or occupation</div>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🌲</div>
+                        <div class="criteria-text">Engage in illegal natural resource extraction or environmental destruction</div>
+                    </div>
+                </div>
+                
+                <p>We also prioritize sites that demonstrate transparency, privacy, and positive social impact. Our goal is to provide a safe, ethical alternative for web discovery.</p>
+            </div>
+        </section>
+        
+        <!-- 9 Pillars Section -->
+        <section class="features section-centered" id="pillars">
+            <h2>Our 9 Pillars</h2>
+            <p style="margin-bottom: 30px; color: #5f6368; max-width: 800px; margin-left: auto; margin-right: auto;">Each pillar represents a separate competition category. Websites are tagged with DXD pillar tags and only compete within their assigned pillar.</p>
+            <div class="pillars-grid" id="pillarsGrid">
+                <div class="pillar-card" style="border-top-color: #4CAF50;" data-category="Sustainable Brands">
+                    <div class="pillar-icon" style="color: #4CAF50;">🌱</div>
+                    <div class="pillar-content">
+                        <h3>Sustainable Brands</h3>
+                        <div class="dxd-tag-badge" style="background: #4CAF50;">DXD Tag: Sustainable</div>
+                        <p>Companies committed to environmental and social responsibility with transparent practices.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Sustainable Brands">View Sustainable Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #2196F3;" data-category="Privacy-First Tech">
+                    <div class="pillar-icon" style="color: #2196F3;">🔐</div>
+                    <div class="pillar-content">
+                        <h3>Privacy-First Tech</h3>
+                        <div class="dxd-tag-badge" style="background: #2196F3;">DXD Tag: Privacy</div>
+                        <p>Tools and platforms that prioritize user privacy, data protection, and transparency.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Privacy-First Tech">View Privacy Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #F44336;" data-category="Verified News">
+                    <div class="pillar-icon" style="color: #F44336;">📰</div>
+                    <div class="pillar-content">
+                        <h3>Verified News</h3>
+                        <div class="dxd-tag-badge" style="background: #F44336;">DXD Tag: News</div>
+                        <p>Journalism sources with transparent fact-checking, funding, and editorial processes.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Verified News">View News Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #9C27B0;" data-category="Knowledge Hubs">
+                    <div class="pillar-icon" style="color: #9C27B0;">🎓</div>
+                    <div class="pillar-content">
+                        <h3>Knowledge Hubs</h3>
+                        <div class="dxd-tag-badge" style="background: #9C27B0;">DXD Tag: Knowledge</div>
+                        <p>Educational resources and research institutions committed to open access and accuracy.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Knowledge Hubs">View Knowledge Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #FF9800;" data-category="Social Impact">
+                    <div class="pillar-icon" style="color: #FF9800;">🤝</div>
+                    <div class="pillar-content">
+                        <h3>Social Impact</h3>
+                        <div class="dxd-tag-badge" style="background: #FF9800;">DXD Tag: Social</div>
+                        <p>Non-profits, NGOs, and organizations driving measurable positive social change.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Social Impact">View Social Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #009688;" data-category="Creative Commons">
+                    <div class="pillar-icon" style="color: #009688;">🎨</div>
+                    <div class="pillar-content">
+                        <h3>Creative Commons</h3>
+                        <div class="dxd-tag-badge" style="background: #009688;">DXD Tag: Creative</div>
+                        <p>Openly licensed art, media, and creative works that enrich shared culture.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Creative Commons">View Creative Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #000000;" data-category="Palestinian Liberation">
+                    <div class="pillar-icon" style="color: #000000;">🕊️</div>
+                    <div class="pillar-content">
+                        <h3>Palestinian Liberation</h3>
+                        <div class="dxd-tag-badge" style="background: #000000;">DXD Tag: Palestine</div>
+                        <p>Verified resources supporting Palestinian rights, justice, and digital sovereignty.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Palestinian Liberation">View Palestine Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #E91E63;" data-category="Health & Wellness">
+                    <div class="pillar-icon" style="color: #E91E63;">🏥</div>
+                    <div class="pillar-content">
+                        <h3>Health & Wellness</h3>
+                        <div class="dxd-tag-badge" style="background: #E91E63;">DXD Tag: Health</div>
+                        <p>Trusted health resources with evidence-based information and ethical practices.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Health & Wellness">View Health Category</button>
+                </div>
+                <div class="pillar-card" style="border-top-color: #FF6B8B;" data-category="Verified Connect">
+                    <div class="pillar-icon" style="color: #FF6B8B;">❤️</div>
+                    <div class="pillar-content">
+                        <h3>Verified Connect</h3>
+                        <div class="dxd-tag-badge" style="background: #FF6B8B;">DXD Tag: Connect</div>
+                        <p>Personally verified families in need, with direct donation links for immediate support.</p>
+                    </div>
+                    <button class="pillar-button" data-category="Verified Connect">View Families Needing Support</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Version Update Section -->
+        <section class="version-update section-centered">
+            <h2>Current Version</h2>
+            <div class="version-badge">Phase 1: Central Curation</div>
+            <p>We're currently in our <strong>first phase</strong> of development, focusing on building a solid foundation of trusted sites through manual verification.</p>
+            <p style="margin-top: 20px; font-style: italic;">We believe in starting with a solid foundation of trusted sites. Quality first, then growth.</p>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does the ranking system work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our ranking system is based on intra-category competition using DXD pillar tags. Each website is assigned to one of our 9 pillars and only competes with other websites in that same category. Ranking is determined by click counts - the more people click on a site, the higher it rises within its pillar. This creates fair competition where privacy tools compete with privacy tools, news sites with news sites, etc.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What exactly are DXD tags?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DXD tags are our proprietary categorization system that assigns each website to one of our 9 ethical pillars. These tags determine which competition category a website belongs to. For example, a site tagged with "Privacy" will only compete with other privacy-focused tools, while a site tagged with "Sustainable" competes in the sustainable brands category.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you decide which websites to include?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each website is reviewed against specific criteria for its pillar category. For example, Privacy-First Tech sites must have transparent privacy policies, no unnecessary data collection, and clear user control over data. We review privacy policies, funding sources, business practices, and community reputation before including any site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I suggest a website for inclusion?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We welcome community suggestions. Use the "Submit a Site" link in the footer to recommend websites. Please include why you believe the site meets our ethical standards and which pillar it belongs to. All suggestions go through our review process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How is this different from traditional search engines?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Traditional search engines use algorithms that often prioritize popular, SEO-optimized, or ad-supported content. Our directory is manually curated based on ethical standards rather than popularity or profitability. We focus on quality, transparency, and ethical practices rather than traffic or revenue.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if I find a problem with a listed website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please let us know! Ethics can change over time. If you find a listed website no longer meets our standards, use the "Submit Feedback" option in the footer. We regularly review listed sites and will investigate any concerns raised by our community.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the "Verified Connect" pillar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Verified Connect is our 9th pillar dedicated to personally verified families in need of support. These are families we know personally or have thoroughly vetted. We provide direct links to their verified donation pages (like GoFundMe, Chuffed, etc.) so you can support them directly. We do NOT collect donations ourselves - we only connect you to their verified fundraising pages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How are families verified for the "Verified Connect" pillar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All families in our Verified Connect pillar are personally known to our team or have been thoroughly vetted through trusted community networks. We verify their identities, situations, and fundraising pages before listing them. We aim to ensure that support goes directly to those who need it most.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <p>IndXD © 2026 - An ethical alternative for better web searches.</p>
+                <ul class="footer-links">
+                    <li><a href="#criteria">Our Criteria</a></li>
+                    <li><a href="https://form.typeform.com/to/ect4ok0q"  target="_blank">Submit a Site</a></li>
+                    <!--<li><a href="#">Roadmap</a></li>-->
+                    <!--<li><a href="#">GitHub</a></li>-->
+                    <li><a href="#" class="footer-volunteer-btn">Become a Volunteer</a></li>
+                </ul>
+            </div>
+            <!--<div class="social-icons">
+                <a href="#" class="social-icon substack-icon" title="Newsletter">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="#" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>-->
+            <!--<div class="empowered-by">
+                <span class="empowered-by-text">empowered by</span>
+                <span class="watermelon-tech">🍉 <a href="https://techforpalestine.org" target="_blank">Tech for Palestine</a></span>
+            </div>--->
+        </div>
+    </footer>
+    
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="searchResultsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="searchResultsModalTitle">Search Results</h3>
+                <button class="modal-close" id="searchResultsModalClose">×</button>
+            </div>
+            <div class="modal-body" id="searchResultsModalBody"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="howToUseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>How to Use This Directory</h3>
+                <button class="modal-close" data-modal="howToUseModal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="how-to-use">
+                    <h2>How to Use This Directory</h2>
+                    <p>Think of us as your <strong>starting point</strong> for better web research. We've done the vetting so you don't have to.</p>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Start Here First</h3>
+                            <p>Before searching, check if we have vetted sites on your topic.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Bookmark Us</h3>
+                            <p>Keep us in your bookmarks for quick reference when researching.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Share Alternatives</h3>
+                            <p>When someone shares a problematic site, suggest an ethical alternative from our directory.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Contribute</h3>
+                            <p>Help us grow by suggesting new sites that meet our ethical standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="rankingSystemModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Our Fair Ranking System</h3>
+                <button class="modal-close" data-modal="rankingSystemModal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="ranking-system">
+                    <h2>Our Fair Ranking System</h2>
+                    <p>Unlike traditional search engines, we believe in fair competition within ethical categories. Each website competes only within its assigned pillar.</p>
+                    <div class="ranking-points">
+                        <div class="ranking-point">
+                            <div class="ranking-icon">🏷️</div>
+                            <h3>DXD Category Tags</h3>
+                            <p>Every site is assigned to one of our 9 ethical pillars. They only compete with sites in their own category.</p>
+                        </div>
+                        <div class="ranking-point">
+                            <div class="ranking-icon">📊</div>
+                            <h3>Click-Based Ranking</h3>
+                            <p>Ranking is determined by actual user engagement. The more clicks a site gets, the higher it ranks in its category.</p>
+                        </div>
+                        <div class="ranking-point">
+                            <div class="ranking-icon">⚖️</div>
+                            <h3>Fair Competition</h3>
+                            <p>A privacy tool won't compete with a news site. Each pillar has its own leaderboard based on real user interest.</p>
+                        </div>
+                        <div class="ranking-point">
+                            <div class="ranking-icon">🔄</div>
+                            <h3>Dynamic Updates</h3>
+                            <p>Rankings update in real-time based on community clicks. Popular sites rise, less relevant ones descend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
